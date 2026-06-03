@@ -1,18 +1,18 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
-import { CheckCircle2, XCircle, ChevronLeft, ChevronRight, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
-import { Separator } from "@/components/ui/separator";
-import { toast } from "sonner";
 import { cn } from "@/lib/utils";
+import { CheckCircle2, ChevronLeft, ChevronRight, Mail, XCircle } from "lucide-react";
+import { useCallback, useEffect, useState } from "react";
+import { toast } from "sonner";
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface SentEmailSummary {
